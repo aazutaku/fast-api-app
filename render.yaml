@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: fast_api_app
+    env: docker
+    dockerContext: .
+    dockerfilePath: ./dockerfiles/fast-api/Dockerfile
+    plan: free
+    numINstances: 1
+    
